@@ -1,0 +1,253 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/exp1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edittxt1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:text="From"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rdGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtView"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/sk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Square Kilometre km2"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/hectare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="@android:color/white"
+                android:onClick="onRadioButtonClicked"
+                android:padding="10dp"
+                android:text="Hectare ha"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/sm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="@android:color/white"
+                android:onClick="onRadioButtonClicked"
+                android:padding="10dp"
+                android:text="Square metre m2"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/sd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Square decimetre dm2"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/sc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Square Centimetre cm2"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/smm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Square Millimetre mm2"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/acre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Acre ac"
+                android:textColor="@android:color/white"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/exp2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edittxt2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/txtView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="60dp"
+            android:text="To"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rdGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView2"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/sk2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Square Kilometre km2"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/hectare2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Hectare ha"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/sm2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Square metre m2"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/sd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Square Decimetre dm2"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/sc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Square Centimetre cm2"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/smm2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Square Millimetre mm2"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/acre2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Acre ac"
+                android:textColor="@android:color/white"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

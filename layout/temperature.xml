@@ -1,0 +1,166 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FA625E"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="500dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/exp1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edittxt1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:text="From"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rdGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/celsius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Celsius"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/fahrenheit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:buttonTint="@android:color/white"
+                android:onClick="onRadioButtonClicked"
+                android:padding="10dp"
+                android:text="Fahrenheit"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/kelvin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Kelvin"
+                android:textColor="@android:color/white"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="500dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/exp2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edittxt2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+        <TextView
+            android:id="@+id/txtView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:text="To"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rdGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView2"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/celsius2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Celsius"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/fahrenheit2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Fahrenheit"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/kelvin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Kelvin"
+                android:textColor="@android:color/white"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

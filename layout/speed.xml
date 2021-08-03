@@ -1,0 +1,253 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    android:orientation="vertical"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/exp1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/edittxt1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:text="From"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rdGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtView"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/mps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Metre per Second m/s"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/kph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="@android:color/white"
+                android:onClick="onRadioButtonClicked"
+                android:padding="10dp"
+                android:text="Kilometre per Hour km/h"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/kps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:buttonTint="@android:color/white"
+                android:onClick="onRadioButtonClicked"
+                android:padding="10dp"
+                android:text="Kilometre per Second km/s"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/mph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Mile per Hour mph"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/fps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Foot per Second fps"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/ips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Inch per Second ips"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/ls"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Lightspeed c"
+                android:textColor="@android:color/white"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="386dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/exp2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/edittxt2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/holo_blue_light"/>
+
+        <TextView
+            android:id="@+id/txtView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="60dp"
+            android:text="To"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rdGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtView2"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/mps2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Metre per Second m/s"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/kph2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Kilometre per Hour km/h"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/kps2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Kilometre per Second km/s"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/mph2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Mile per Hour mph"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/fps2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Foot per Second fps"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/ips2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Inch per Second ips"
+                android:textColor="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/ls2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:onClick="onRadioButtonClicked"
+                android:buttonTint="@android:color/white"
+                android:padding="10dp"
+                android:text="Lightspeed c"
+                android:textColor="@android:color/white"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>
